@@ -20,6 +20,9 @@ configuration:
     api_token:
       description: Boost Security API token
       type: string
+    cli_version:
+      description: Boost Security CLI version
+      type: string
     exec_command:
       description: Command to run when in exec mode
       type: string

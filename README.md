@@ -58,6 +58,11 @@ The Boost Security API token secret.
 file. Intead, either expose the environment variable or refer to Builtkite's
 [secrets management document](https://buildkite.com/docs/pipelines/secrets).
 
+### `cli_version` (Optional, string)
+
+Overrides the cli version to download when performing scans. If undefined,
+this will default to pulling "2.0".
+
 ### `docker_create_args` (Optional, string)
 
 Optional additional arguments to pass to `docker create` when preparing the
