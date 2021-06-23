@@ -112,6 +112,7 @@ main.scan ()
 }
 
 action=$(config.get "ACTION")
+set -x
 case "${action:-scan}" in
   exec)     main.exec ;;
   scan)     main.scan ;;
