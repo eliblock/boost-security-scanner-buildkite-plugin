@@ -81,7 +81,6 @@ main.complete ()
 
   ${BOOST_EXE} scan complete
   ! test -f "${BOOST_BIN:-}" || rm "${BOOST_BIN}"
-  ! test -d "${BOOST_CLI:-}" || rm -rf "${BOOST_CLI}"
   ! test -f "${BOOST_ENV:-}" || rm "${BOOST_ENV}"
 }
 
