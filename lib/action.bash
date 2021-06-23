@@ -110,14 +110,3 @@ main.scan ()
 
   exec ${BOOST_EXE} scan run ${BOOST_CLI_ARGUMENTS:-}
 }
-
-action=$(config.get "ACTION")
-set -x
-case "${action:-scan}" in
-  exec)     main.exec ;;
-  scan)     main.scan ;;
-  complete) main.complete;;
-  *)        log.error "invalid action ${action:-scan}"
-            exit 1
-            ;;
-esac
